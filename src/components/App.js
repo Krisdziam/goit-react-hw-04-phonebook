@@ -46,7 +46,7 @@ export class App extends Component {
 
   formSubmitHandler = data => {
     if (this.isDuplicate(data)) {
-      // return alert(`${data.name} already exist`)
+
       const error = toast.error(
         `${data.name} already exist`,
         {
